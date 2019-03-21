@@ -66,7 +66,7 @@ public class MyView extends View {
     public InputConnection onCreateInputConnection(EditorInfo outAttrs) {
 //        return super.onCreateInputConnection(outAttrs);
         outAttrs.inputType = InputType.TYPE_CLASS_NUMBER;
-        return new MyInputConnection(this, true);
+        return new MyInputConnection(this, false);
     }
 
     public void setWatchDeleteEvent(OnKeyListener listener) {
